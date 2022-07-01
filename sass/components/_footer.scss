@@ -5,7 +5,18 @@
 
 .footer__container {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        align-items: baseline;
+    }
+    
+}
+
+.footer__text {
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .footer__logo {
@@ -43,11 +54,10 @@
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
-
 }
 
 .footer-nav__list .footer-nav__item {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 
     &:last-child {
         margin-bottom: 0;
