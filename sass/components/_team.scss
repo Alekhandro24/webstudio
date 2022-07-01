@@ -1,41 +1,70 @@
 .team {
-    padding-bottom: 94px;
-    padding-top: 94px;
-
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--team-background-color);
+    
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 94px;
+        padding-top: 94px;
+        max-width: 1600px;
+        height: 708px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        background-color: var(--team-background-color);
+    }
+
 }
 
 .team_title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @include font(700, 28px, 1.18, null);
+
+    
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        @include font(null, 36px, 1.17, null);
+    }
+    
 }
 
 .team__list {
     display: flex;
-    text-align: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-.team__list .team__item+.team__item {
-    margin-left: 30px;
-}
 
 .team__list > .team__item {
+    width: 100%;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px) / 4);
+    }
 }
 
 .member {
     display: block;
-    padding: 30px 0;
+    padding: 30px 0 24px;
+    text-align: center;
     background-color: var(--team-title-background-color);
     border-radius: 0px 0px 4px 4px;
+    
 }
 
 
 .member .member__title {
     margin-bottom: 10px;
     color: var(--title-text-color);
+    
 
     @include font(500, 16px, 1.19, null);
 
@@ -43,19 +72,17 @@
 
 .member p {
     margin-bottom: 16px;
-    font-size: 16px;
-    line-height: 1.19;
+    @include font(null, 16px, 1.19, null);
+    
 }
 
 
 .member-icon__list {
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 
-.member-icon__list .member-icon__item + .member-icon__item {
-    margin-left: 10px;
-}
 
 .member-icon__item {
     width: 44px;
