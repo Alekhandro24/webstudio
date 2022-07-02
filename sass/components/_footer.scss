@@ -4,19 +4,41 @@
 }
 
 .footer__container {
+    
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        justify-content: space-evenly;
         align-items: baseline;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+        
     }
     
 }
 
 .footer__text {
-    margin-bottom: 30px;
-    text-align: center;
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
+      
 }
 
 .footer__logo {

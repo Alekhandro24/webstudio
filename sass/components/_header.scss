@@ -1,10 +1,14 @@
 .header-page {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 15px;
 }
 
 .nav {
     display: flex;
     align-items: center;
+    
 }
 
 .logo {
@@ -31,8 +35,10 @@
 
 
 .nav__list {
-    display: flex;
-    margin-left: 93px;
+    display: none;
+
+    // display: flex;
+    // margin-left: 93px;
 }
 
 .nav__list .nav__link {
@@ -82,9 +88,10 @@
 
 
 .contact__list {
-    display: flex;
-    margin-left: auto;
-    align-items: center;
+    display: none;
+    // display: flex;
+    // margin-left: auto;
+    // align-items: center;
 }
 
 .contact__list .contact__item + .contact__item {
@@ -113,7 +120,6 @@
 }
 
 
-
 .contact__icon {
     margin-right: 10px;
     fill: currentColor;
@@ -124,6 +130,85 @@
     }
 }
 
+.btn-menu-open,
+.btn-menu-close {
+    display: block;
+    border: none;
+    background-color: var(--primary-background-color);
+    margin-left: auto;
+}
 
+.btn-menu-close {
+    margin-bottom: 8px;
+}
 
+.mob-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-background-color);
+    padding: 10px 15px 48px 40px;
+    overflow-y: scroll;
+
+    .mob-munu__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+
+    }
+}
+
+.mob-menu__item:not(:last-child) {
+    margin-bottom: 32px;   
+}
+
+.mob-menu__link {
+    @include font(500, 40px, 1.18, 0.02em);
+    color: #212121;
+}
+
+.mob-contact__list {
+    margin-bottom: 64px;
+}
+
+.mob-contact__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.mob-contact__tel {
+    @include font(500, 34px, 1.18, 0.02em);
+    color: #2196F3;
+
+}
+
+.mob-contact__mail {
+    @include font(500, 24px, 1.17, 0.02em);
+    color: #757575;
+
+    &:hover, &:focus {
+        color: #2196F3;
+    }
+
+}
+
+.mob-soc {
+    display: flex;
+    gap: 10px;
+    padding-left: 0;
+    
+}
+
+.mob-soc__item:not(:last-child) {
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+ 
+}
+
+.mob-soc__link {
+    color: #2196F3;;
+}
 
