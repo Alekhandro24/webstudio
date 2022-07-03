@@ -1,12 +1,9 @@
-
-
 .join-us {
     
     margin-bottom: 60px;
 
     @media screen and (min-width: 768px) {
         margin: 0 0 0 70px;
-    
     }
 }
 
@@ -30,19 +27,7 @@
 .join-us__item {
     width: 44px;
     height: 44px;
-
-    // @media screen and (min-width: 768px) {
-    //     width: calc((100% - 30px) / 2);
-    // }
-    
-    // @media screen and (min-width: 1200px) {
-    //     width: calc((100% - 90px) / 4);
-    // }
 }
-
-// .join-us__list .join-us__item + .join-us__item {
-//     margin-left: 10px;
-// }
 
 .join-us__link {
     display: flex;
