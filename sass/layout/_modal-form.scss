@@ -13,7 +13,7 @@
 
 }
 
-.backdrop.is-hidden {
+.is-hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
@@ -24,12 +24,19 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    width: 528px;
-    height: 581px;
-
+    
+    width: 450px;
+    height: 609px;
+    
+    
     padding: 40px;
     background-color: #ffffff;
+    
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+    }
+
 }
 
 .modal__button {
@@ -52,10 +59,6 @@
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &button:focus {
-        background-color: red;
-    }
 }
 
 .modal__icon {
@@ -64,7 +67,7 @@
 
     .modal__button:hover &,
     .modal__button:focus & {
-        fill: white
+        fill: var(--accent-color);
     }
 }
 
@@ -72,11 +75,16 @@
 .modal__title {
     margin-bottom: 30px;
 
-    @include font(700, 20px, 1.15, 0.03em);
+    @include font(700, 20px, 1.5, 0.03em);
 
     text-align: center;
-
     color: #212121;
+
+
+    @media screen and (min-width: 1200px) {
+        @include font(null, null, 1.15, null);
+    }
+    
 }
 
 .form {
@@ -179,18 +187,12 @@
 }
 
 
-.agreement-field__check-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .agreement-field__check-text::before {
     content: '';
     width: 16px;
     height: 15px;
     border: 2px solid #212121;
-    margin-right: 7px;
+    margin-right: 8px;
 
     .agreement-field__input:checked + & {
         background-color: #2188f3;
@@ -202,6 +204,31 @@
     }
 }
 
+.agreement-field__check-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include font(400, 12px, 1.17, 0.03em);
+   
+
+    @media screen and (min-width: 1200px) {
+        @include font(null, 14px, 1.71, null);
+    }
+    
+}
+
+.agreement-field__label {
+    color: var(--accent-color);
+    text-decoration-line: underline;
+    margin-left: 3px;
+    
+    @include font(400, 12px, 1.17, 0.03em);
+
+    @media screen and (min-width: 1200px) {
+        @include font(null, 14px, 1.71, null);
+    }
+}
 
 .visually-hidden {
     position: absolute;
@@ -217,12 +244,6 @@
     overflow: hidden;
 }
 
-
-.agreement-field__label {
-    color: var(--accent-color);
-    text-decoration: underline;
-    margin-left: 3px;
-}
 
 .modal__send-button {
 
