@@ -222,6 +222,10 @@
     @include font(500, 34px, 1.18, 0.02em);
     color: #2196F3;
 
+    @media screen and (max-width: 479px) {
+        font-size: 29px;
+    }
+
 }
 
 .mob-contact__mail {
@@ -247,5 +251,11 @@
 .mob-soc__link {
     color: #2196F3;;
     font-family: inherit;
+    @include font(500, 18px, 1.22, 0.02em);
+
+    @media screen and (max-width: 479px) {
+        @include font(null, 11px, 1.36, 0.02em);
+    }
+    
 }
 

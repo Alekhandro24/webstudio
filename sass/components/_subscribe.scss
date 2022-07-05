@@ -22,6 +22,10 @@
     text-transform: uppercase;
 
     color: var(--white-text-color);
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .subscribe__form {
