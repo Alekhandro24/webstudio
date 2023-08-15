@@ -8,6 +8,6 @@ The Home page provides visitors with an overview of the studio's offerings. It i
 The Portfolio page displays an impressive collection of projects completed by the WebStudio team. Each project is presented as a visually appealing card, and visitors can hover over each card to view additional information about the project
 
 ## Features
-*
-*
-*
+* vdfdf
+* fdfd
+* fgdfg
