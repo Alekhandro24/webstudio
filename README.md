@@ -27,7 +27,7 @@ This website was built using the following technologies:
 ## Contact Information
 * **Linkedin:** [alekhandro-lagonavarro](https://www.linkedin.com/in/alekhandro-lagonavarro/)
 * **GitHub:** [Alekhandro24](https://github.com/Alekhandro24)
-* **Contact:** [+380507695110](+380507695110)
+* **Tel:** [+380507695110](+380507695110)
 * **Email:** [lagoalekhandro@gmail.com](https://www.gmail.com)
 
 
