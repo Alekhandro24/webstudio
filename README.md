@@ -24,3 +24,8 @@ This website was built using the following technologies:
 * JavaScript
 * Parcel
 
+## Contact Information
+**Email:** [lagoalekhandro@gmail.com](lagoalekhandro@gmail.com)
+**GitHub:** [Alekhandro24](https://github.com/Alekhandro24)
+**Linkedin:** [alekhandro-lagonavarro](https://www.linkedin.com/in/alekhandro-lagonavarro/)
+
