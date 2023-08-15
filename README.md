@@ -25,7 +25,7 @@ This website was built using the following technologies:
 * Parcel
 
 ## Contact Information
-* **Email:** [lagoalekhandro@gmail.com]()
+* **Email:** [lagoalekhandro@gmail.com](/)
 * **GitHub:** [Alekhandro24](https://github.com/Alekhandro24)
 * **Linkedin:** [alekhandro-lagonavarro](https://www.linkedin.com/in/alekhandro-lagonavarro/)
 
